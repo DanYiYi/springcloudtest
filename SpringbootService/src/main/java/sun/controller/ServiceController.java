@@ -29,7 +29,7 @@ public class ServiceController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("test");
+
 
         CommUtils.printDataJason(response, restfulResult);
     }
