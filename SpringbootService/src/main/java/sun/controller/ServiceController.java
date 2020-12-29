@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController // 重要，如果用Controller会404
-@RequestMapping(value = "service")
+@RequestMapping(value = "service")//测试
 public class ServiceController {
 
     @RequestMapping(value = "hello")
@@ -29,6 +29,7 @@ public class ServiceController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("test");
 
         CommUtils.printDataJason(response, restfulResult);
     }
